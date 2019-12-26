@@ -1,0 +1,290 @@
+@import vars
+@import fonts
+@import libs
+
+@import "vars"
+@import "fonts"
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap')
+
+::placeholder
+  color: #B9B9B9;
+
+::selection
+  background-color: $accent
+  color: #fff
+
+html
+  overflow-x: hidden
+
+body
+  font-size: $default-size
+  min-width: 320px
+  position: relative
+  line-height: 1.25
+  font-family: 'Lato', sans-serif;
+  font-weight: 400
+  overflow-x: hidden
+  opacity: 1
+  color: $default-color
+
+  select
+    background-color: #fff
+    outline: none
+    appearance: none
+
+  input, textarea, .mob-select
+    background-color: #fff
+    border: #666 1px solid
+    outline: none
+
+  a
+    text-decoration: none
+    color: $default-color
+
+    &:hover
+      text-decoration: none
+      color: #000000
+p 
+	line-height: 30px
+b, strong
+  font-weight: bold
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+button
+  cursor: pointer
+
+.h2
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 42px;
+	letter-spacing: -1px
+
+.green_txt		
+	color: #057B34;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 30px
+	margin-right: 56px
+.gray__txt
+	color: #B9B9B9;
+	margin-bottom: 20px
+.flex
+  display: flex
+  align-items: center
+  justify-content: center
+
+.column
+  display: flex
+  flex-direction: column
+
+.flex__start
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+
+.flex__beetween
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.space-between
+	justify-content: space-between
+.flex__wrap
+  display: flex
+  flex-wrap: wrap
+.end
+  display: flex
+  justify-content: end
+
+.align__center
+	align-items: center
+.align__baseline
+  display: flex
+  align-items: baseline
+.container
+  margin: 0 auto
+  max-width: $max-width
+  width: 100%
+  height: 100%
+  position: relative
+.grid
+	display: grid
+.bg__cover
+  background-position: center
+  background-repeat: no-repeat
+  background-size: auto
+
+.bg__contain
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+
+	
+.header__inner
+	padding: 19px 0 17px
+	grid-template-columns: auto auto auto auto
+	grid-template-rows: 45px
+	.header__phone
+		color: #0B9A05;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 18px;
+	.header__email	
+		font-size: 15px;
+		line-height: 18px;
+		
+.header__menu
+	grid-template-columns: repeat(3, auto)
+	grid-gap: 60px
+	ul
+		li
+			a 
+				font-size: 20px;
+				line-height: 24px;	
+
+.order__section
+	background: #EAECEC;
+	.order__wrapper	
+		padding: 101px 0 90px
+
+		.order__bg
+		  position: absolute
+		  right: 0
+		  bottom: 0
+		.main__form
+			margin-top: 20px
+			max-width: 360px
+			width: 100%
+			input, button
+				width: 100%
+				border: none
+				height: 60px
+				margin-bottom: 10px
+			input
+				background: #fff
+				padding: 17px 20px
+
+			button
+				background: #0B9A05;
+				color: #FFF
+				&:hover
+					background: #007200;
+.why__section
+	padding: 120px 0 227px
+	.why__wrapper
+		margin-top: 60px
+		grid-template-columns: repeat(auto-fill, 360px)
+		grid-template-rows: 1fr 1fr
+		grid-gap: 45px 60px
+		
+.partners__wrapper
+	margin-top: 91px
+	grid-template-columns: repeat(auto-fit, 180px)
+	grid-template-rows: relative(4, 100px)
+	grid-row-gap: 80px
+	grid-column-gap: 24px
+
+.hidden__txt
+	display: none
+.description__block
+	margin-top: 200px
+	margin-bottom: 62px
+	.description__item
+		position: relative
+		padding: 60px 0 30px
+		border-bottom: 1px #EEEEEE solid
+		&:last-child
+			border-bottom: none
+		.open__btn
+			position: absolute
+			top: 60px
+			right: 20px
+			cursor: position
+			transition: 0.5s transform
+		.opened
+			transform: rotate(45deg)
+footer
+	background: #F4F6F6;
+	.footer__inner
+		position: relative
+		padding: 81px 0 56px
+		grid-template-columns: repeat(3, 165px)
+		grid-column-gap: 255px
+		.rights
+			position: absolute
+			left: 0
+			bottom: 35px
+
+.header__mobile
+	display: none
+	position: relative
+	.header__mobile__menu
+		position: absolute;
+		background: #fff;
+		z-index: 2;
+		width: 100%;
+		height: 0
+		transition: height 0.5s
+	.hamburger
+		height: 14px;
+		display: grid;
+		grid-template-columns: auto;
+		justify-content: space-between;
+		position: absolute
+		right: 20px
+		top: 12px
+		.first__line, .second__line, .second_opened, .first_opened
+			position: absolute
+			right: 0
+			transition: 0.5s transform
+		.first__line	
+			top: 0
+		.first_opened
+			top: 0px
+			transform: rotate(-45deg);
+		.second__line
+			top: 8px
+			
+		.second_opened
+			top: 0px
+			transform: rotate(45deg);
+
+	.header__phones__mobile
+		position: absolute
+		right: 60px
+		top: -8px
+		line-height: 1
+		
+		a
+			font-size: 12px;
+			line-height: 14px;
+	.clicked
+		position: absolute
+		right: calc(100% - 175px);
+		top: 100px;
+		width: 156px;
+		a 
+			font-size: 20px;
+			line-height: 24px;
+	.mobile__phones
+		transition: 0.5s top,  0.5s right
+		z-index: 3
+	.mobile__menu__inner
+		padding-top: 127px
+		opacity: 0
+		transition: 0.5s opacity
+		display: none
+		ul 
+			margin-top: 60px
+			li 
+				margin-bottom: 30px
+				a 
+					font-weight: bold
+					
+@import "media"
+// Always at the end

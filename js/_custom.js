@@ -48,5 +48,6 @@ $(function() {
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 
+	$(".phone").inputmask("999(99) 999-9999");
 
 });

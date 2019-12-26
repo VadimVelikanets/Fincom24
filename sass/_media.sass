@@ -1,0 +1,123 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width: 1600px)
+  /**/
+@media only screen and (max-width: 1366px)
+  /**/
+@media only screen and (max-width: 1280px)
+  /**/
+@media only screen and (max-width: 1200px)
+  .container
+    padding: 0 20px
+@media only screen and (max-width: 1170px)
+  /**/
+@media only screen and (max-width: 1024px)
+  footer 
+    .footer__inner
+      grid-column-gap: 200px;
+@media only screen and (max-width: 992px)
+  .header__inner
+    display: none
+  .header__mobile
+    display: block
+    .header__mobile__inner
+      padding: 14px 0 
+      position: relative
+    .mobile__phones
+      a 
+        color: #0B9A05;
+  .h2
+    font-size: 25px;
+    line-height: 30px;
+  .order__section
+    .order__wrapper	
+      padding: 38px 0 39px;
+      background-image: none !important
+      .main__form
+        input, button
+          margin-bottom: 5px  
+          font-size: 15px;
+          line-height: 18px;
+  .description__block 
+    margin: 70px 0 0px
+    .description__item
+      padding: 30px 0 30px
+      .open__btn 
+        top: 29px;
+      img 
+        height: 20px
+  .green_txt
+    margin-bottom: 0px     
+  footer 
+    .footer__inner
+      padding: 51px 0 98px;
+      display: block
+      img 
+        margin-bottom: 23px
+      .gray__txt, .footer__number
+        font-size: 15px
+        line-height: 29px  
+      .gray__txt
+        margin-bottom: 12px
+      .footer__phones
+        margin-bottom: 20px  
+  .hidden__txt
+    margin-top: 10px    
+@media only screen and (max-width: 768px)
+  p 
+    font-size: 15px;
+    line-height: 20px;
+  .green_txt
+      font-size: 20px;
+      line-height: 24px;
+  
+  .description__block
+    .description__item
+      .open__btn
+        right: 0px
+
+
+
+
+@media only screen and (max-width: 660px)
+  /**/
+@media only screen and (max-width: 480px)
+  .why__section
+    padding: 60px 0 88px
+    .why__wrapper 
+      margin-top: 30px;
+      display: block
+      .why__item
+        margin-bottom: 32px
+  .partners__wrapper 
+    margin-top: 52px;
+    grid-template-columns: repeat(auto-fit,100px);
+    grid-template-rows: relative(4,100px);
+    grid-row-gap: 52px;
+    grid-column-gap: 45px;
+    justify-content: center
+    a 
+      img
+        width: 100px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /**/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+  /**/
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /**/
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /**/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  /**/
+
